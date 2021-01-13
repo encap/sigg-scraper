@@ -1,0 +1,77 @@
+:root {
+  --red: #f44336;
+  --green: #8bc34a;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+  background-color: hsl(222, 20%, 10%);
+  color: white;
+}
+
+body:fullscreen, #outputEl, #outputEl:fullscreen {
+  background-color: hsl(222, 20%, 10%);
+}
+
+#back, #sigg {
+  position: absolute;
+  top: -25px;
+  font-weight: 900;
+  font-size: 40px;
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+}
+
+#back {
+  left: -5px;
+}
+
+#sigg {
+  right: -5px;
+}
+
+h2 {
+  font-size: 100px;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0 20px 0;
+}
+
+#rateEl, #rateSignEl {
+  font-size: 80px;
+  text-align: right;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+#outputEl {
+  width: 90%;
+}
+
+.stock_stats {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rate {
+  width: 80px;
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+}
+
+.value {
+  text-align: right;
+  width: 80px;
+}

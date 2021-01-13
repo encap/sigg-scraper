@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <link rel="shortcut icon" href="./favicon.ico">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0082bc" />
+  <meta property="og:image" content="/thumb2.jpg">
+  <link rel="stylesheet" href="./style.css">
+
+  <title>SIGG NOTIFICATION</title>
+
+  <script await>
+  if (screen.width <= 700 && document.location.search == '?eruda') {
+    // Mobile devtools without adb connection
+    var script = document.createElement('script');
+    script.src="//cdn.jsdelivr.net/npm/eruda";
+    document.body.appendChild(script);
+    script.onload = function () {
+       eruda.init();
+        console.warn('ERUDA');
+    }
+  }
+  </script>
+
+  <script defer src="./main.js"></script>
+
+
+</head>
+<body>
+  <div class="loading" id="loading">
+  </div>
+
+  <div id="overlay">
+
+    <div id="container">
+      <div class="images">
+        <img src="./gpwLogo.png">
+        <img src="./siggLogo.png">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

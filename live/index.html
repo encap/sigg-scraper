@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="../favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="theme-color" content="hsla(222, 20%, 10%)" />
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta property="og:image" content="/thumb2.jpg">
+
+	<link rel="stylesheet" href="./style.css">
+
+	<title>SIGG LIVE SCRAPER</title>
+
+	<script await>
+  if (screen.width <= 700 && document.location.search == '?eruda') {
+    var script = document.createElement('script');
+    script.src="//cdn.jsdelivr.net/npm/eruda";
+    document.body.appendChild(script);
+    script.onload = function () {
+       eruda.init();
+        console.warn('ERUDA');
+    }
+  }
+	</script>
+		
+	<script defer src="./main.js"></script>
+
+</head>
+<body>
+
+	<button id="back" onclick="redirect('..')">←</button>
+	<button id="sigg" onclick="redirect('sigg.gpw.pl/main', true)">→</button>
+
+	<div id="outputEl">
+
+		<h2 id="profitEl">000.00</h2>
+
+		<p>
+			<span id="rateSignEl">▶</span>
+			<span id="rateEl">0%</span>
+		<p>
+
+		<div id="stocksEl">
+
+		</div>
+
+		<br>
+
+		<p>
+			<span id="debtsText">Należności: </span><span id="debtsEl">0</span>
+		</p>
+		<p>
+			<span id="freeText">Wolne: </span><span id="freeEl">4321.00</span>
+		</p>
+		<p>
+			<span id="ordersText">Zlecenia: </span><span id="ordersEl">0</span>
+		</p>
+		<p>
+			<span id="transfersText">Transfery: </span><span id="transfersEl">0</span>
+		</p>
+		<p>
+			<span id="rankText">Miejsce w rankingu: </span><span id="rankEl">123</span>
+		</p>
+
+	</div>
+
+</body>
+</html>
